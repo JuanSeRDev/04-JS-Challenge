@@ -143,6 +143,8 @@ form{
 .attribution { font-size: 11px; text-align: center; };
 .attribution a { color: hsl(228, 45%, 44% )}
 
+/* AQUI COMIENA EL MEDIA QUERY EN GRID */
+
 @media screen and (min-width:600px){
     body{
         display: flex;
