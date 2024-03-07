@@ -1,12 +1,19 @@
-form = document.getElementById("suscribe-form").addEventListener("submit", ()=>{
-    let emailImput = document.querySelector(".imput");
-    let errorMessage = document.getElementById("error-message");
+document.addEventListener('DOMContentLoaded', ()=>{
+    const emailInput = document.querySelector('.input');
+    const errorMessage = document.getElementById('error-messege');
 
-    if (isvalidEmail(emailImput.value)) {
-        errorMessage.classList.remove(".hidden");
-    }else {
-        errorMessage.classList.add(".hiden")
+    emailInput.addEventListener('input', function () {
+        if (!isValidEmail(emailInput.value)) {
+            errorMessage.classList.remove('hidden');
+        } else {
+            errorMessage.classList.add('hidden');
+        }
+    });
+
+    function isValidEmail(email) {
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
     }
-})
+});
 
 
