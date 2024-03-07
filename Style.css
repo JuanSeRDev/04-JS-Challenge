@@ -164,8 +164,9 @@ form{
     .logo{
         grid-row: 1/2;
         right: 0;
-        left: 160px;
-        width: 150px;
+        left: 100px;
+        top: 50px;
+        width: 200px;
     }
 
 
@@ -173,6 +174,10 @@ form{
     picture{
         grid-column: 2/3;
         grid-row: 1/4;
+    }
+
+    .hero-mobile{
+        width: 100%;
     }
 
 
@@ -186,41 +191,46 @@ form{
         grid-row: 2/3;
         text-align: start;
         display: flex;
-        width: 50%;
+        width: 70%;
         flex-direction: column;
         justify-content: flex-start;
     }
     
     .title{
-        font-size: 50px;
+        font-size: 70px;
         margin-bottom: 10px;
     }
     
     .title-2, .title-3{
-        font-size: 50px;
+        font-size: 70px;
         margin-bottom: 10px;
     }
 
     .text{
         text-align: start;
-        width: 50%;
+        font-size: 20px;
+        width: 70%;
     }
     
     form{
         grid-row: 3/4;
+        align-items: center;
     }
 
     .input{
+        position: relative;
         padding: 20px 0 20px 30px;
         border-radius: 30px;
-        width: 50%;
+        width: 70%;
+        bottom: 100px;
     }
 
     .button{
         width: 100px;
         height: 60px;
         border-radius: 35px;
-        right: 160px;
+        right: 90px;
+        bottom: 100px;
     }
 
 
