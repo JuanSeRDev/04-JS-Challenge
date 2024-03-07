@@ -14,7 +14,7 @@
     <img src="images/logo.svg" alt="Logo" class="logo">
 
     <picture>
-      <source media="(min-width: 376px)" srcset="images/hero-desktop.jpg" class="hero-desktop">
+      <source media="(min-width: 600px)" srcset="images/hero-desktop.jpg" class="hero-desktop">
       <img src="images/hero-mobile.jpg" alt="#" class="hero-mobile">
     </picture>
 
@@ -30,12 +30,12 @@
       </p>
     </div>
     
-    <form>
-      <input type="email" value="" placeholder="Email Addres" class="input"></input>
+    <form id="suscribe-form">
+      <input type="email" value="" placeholder="Email Addres" class="input" required></input>
       <img src="images/icon-error.svg" alt="" class="icon-error">
       <button type="submit" class="button"><img src="images/icon-arrow.svg" alt="send"></button>
     </form>
-    <p class="error-msg">Please provide a valid Email</p>
+    <p id="error-messege" class="error-msg hidden">Please provide a valid Email</p>
   </div>
   
   <footer>
